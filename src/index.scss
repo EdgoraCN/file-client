@@ -1,0 +1,14 @@
+body {
+  div#root{
+    background-color: #222;
+    color: #8EE4AF;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -1px;
+    bottom: 3px;
+    .oc-fm--dialog__input {
+      padding: 6px 0px;
+    }
+  }
+}
