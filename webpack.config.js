@@ -19,8 +19,14 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname,'src'),
-    host: '0.0.0.0'
-
+    host: '127.0.0.1',
+    proxy : {
+      '/files/**' : {
+        target : 'http://localhost:9000',
+        secure : false,
+        //changeOrigin : true
+      }
+    }
   },
   module: {
     rules: [
