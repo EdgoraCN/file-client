@@ -22,7 +22,7 @@ module.exports = {
     host: '127.0.0.1',
     proxy : {
       '/files/**' : {
-        target : 'http://localhost:9000',
+        target : 'http://localhost:30207',
         secure : false,
         //changeOrigin : true
       }
